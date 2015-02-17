@@ -1,0 +1,12 @@
+# $Id: Makefile.xm1000,v 1.0 2012/08/06 13:51:11 nifi Exp $
+
+
+CONTIKI_TARGET_SOURCEFILES += contiki-xm1000-platform.c 
+CLEAN += *.xm1000 
+
+ifndef SMALL
+SMALL=1
+endif
+
+include $(CONTIKI)/platform/xm1000/Makefile.common
+
